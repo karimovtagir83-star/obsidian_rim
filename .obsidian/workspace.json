@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "157084b17134a2fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b926b7c4a32ba92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6986773ecbee61c3",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Граф"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "42d6ae1af8f8acd6",
+    "type": "split",
+    "children": [
+      {
+        "id": "e43ee905b1ecf9ad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc55fc941f3e0ab2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "0dbbc0552b0403d1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "a7e1d95e038ac292",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c7a9429312da16ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "f99721bbd5d1f676",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30fd7250174e4bc3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки"
+            }
+          },
+          {
+            "id": "1be28e8287d68fcf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки"
+            }
+          },
+          {
+            "id": "d98c6fb6d2ed5f1b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "2fa32651838106ab",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "4472f42eb9477e36",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "6986773ecbee61c3",
+  "lastOpenFiles": [
+    "09-ASP.NET Core/REST: принципы и проектирование API.md",
+    "09-ASP.NET Core/HTTP: методы, коды, заголовки, кеширование.md",
+    "09-ASP.NET Core/Аутентификация: обзор схем.md",
+    "09-ASP.NET Core/09 — ASP.NET Core (обзор раздела).md",
+    "06-Асинхронность/Процессы, потоки и планировщик ОС.md",
+    "00-Старт/🏠 Главная.md",
+    "_Шаблоны/МАНИФЕСТ.md",
+    "01-Роадмап/Трекер прогресса.md",
+    "_СОСТОЯНИЕ БАЗЫ.md",
+    "_СОСТОЯНИЕ БАЗЫ.md.tmp.2938.179259e3d88a",
+    "10-Архитектура и паттерны/MediatR и альтернативы.md",
+    "10-Архитектура и паттерны/MediatR и альтернативы.md.tmp.8955.1ab154954367",
+    "14-Производительность/Аллокации и как их избегать.md",
+    "14-Производительность/Аллокации и как их избегать.md.tmp.8955.ed39f76480ff",
+    "10-Архитектура и паттерны/Паттерны в .NET: где они уже используются.md",
+    "10-Архитектура и паттерны/Паттерны в .NET: где они уже используются.md.tmp.8955.96fde6211f22",
+    "10-Архитектура и паттерны/Clean Architecture.md",
+    "10-Архитектура и паттерны/Clean Architecture.md.tmp.8955.923f4e4aa497",
+    "14-Производительность/14 — Производительность (обзор раздела).md",
+    "14-Производительность/14 — Производительность (обзор раздела).md.tmp.8955.07cfc368c46f",
+    "90-Практика/Проекты/Проект 1 — Консольный менеджер задач.md",
+    "90-Практика/Проекты/Проект 1 — Консольный менеджер задач.md.tmp.8955.435660731bab",
+    "05-Коллекции и LINQ/IEnumerable, IEnumerator и yield return.md",
+    "05-Коллекции и LINQ/IEnumerable, IEnumerator и yield return.md.tmp.8955.a74efcc79774",
+    "05-Коллекции и LINQ/LINQ: основы и два синтаксиса.md",
+    "05-Коллекции и LINQ/LINQ: основы и два синтаксиса.md.tmp.8955.679fe0604f84",
+    "05-Коллекции и LINQ/Dictionary и HashSet изнутри.md",
+    "05-Коллекции и LINQ/Dictionary и HashSet изнутри.md.tmp.8955.c7eaa543c4a0",
+    "10-Архитектура и паттерны/Антипаттерны и code smells.md",
+    "05-Коллекции и LINQ/Обзор коллекций .NET и как выбирать.md",
+    "10-Архитектура и паттерны/Паттерны GoF: порождающие.md",
+    "_Шаблоны/СПЕЦИФИКАЦИЯ.md",
+    "01-Роадмап/План на 12 месяцев.md",
+    "01-Роадмап/🗺️ Роадмап (полный).md",
+    "00-Старт/Настройка окружения.md",
+    "00-Старт/Как пользоваться базой.md"
+  ]
+}
