@@ -225,7 +225,7 @@ Console.WriteLine(Unsafe.SizeOf<string>());          // 8 — размер СС�
 Console.WriteLine(Marshal.SizeOf<Point3>());         // 24
 ```
 
-Разница между `Unsafe.SizeOf` и `Marshal.SizeOf` — классическая ловушка при P/Invoke, см. [[Interop и P/Invoke]].
+Разница между `Unsafe.SizeOf` и `Marshal.SizeOf` — классическая ловушка при P/Invoke, см. [[Interop и P-Invoke]].
 
 ### Паддинг: почему порядок полей меняет размер
 
