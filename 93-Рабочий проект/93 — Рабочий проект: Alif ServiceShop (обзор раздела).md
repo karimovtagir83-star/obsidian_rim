@@ -32,7 +32,7 @@ aliases: [Alif ServiceShop, ServiceShop, Рабочий проект, alifshop.b
 
 | Слой | Технология | Заметка базы |
 |---|---|---|
-| Рантайм | .NET 8 (`net8.0`) | [[Target Framework Moniker и мультитаргетинг]] |
+| Рантайм | .NET 8 (`net8.0`) | [[Файл проекта .csproj изнутри]] |
 | Веб | ASP.NET Core, контроллеры MVC | [[MVC и контроллеры]] |
 | DI | **Autofac**, не встроенный контейнер | [[Dependency Injection: контейнер ASP.NET Core]] |
 | Медиатор | MediatR 12 | [[MediatR и альтернативы]] |

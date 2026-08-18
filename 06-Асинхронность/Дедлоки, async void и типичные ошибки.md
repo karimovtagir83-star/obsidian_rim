@@ -121,7 +121,7 @@ finally
 }
 ```
 
-Подробнее — [[Semaphore, Mutex, ReaderWriterLockSlim]] и [[Примитивы синхронизации: lock, Monitor]].
+Подробнее — [[Примитивы синхронизации: lock, Monitor]].
 
 ---
 
@@ -318,6 +318,6 @@ public class NotificationService
 - [[async и await: как это работает на самом деле]] · [[Контекст синхронизации и ConfigureAwait]]
 - [[Task и Task Parallel Library]] · [[Thread и ThreadPool]]
 - [[Исключения в асинхронном коде]] · [[CancellationToken и отмена операций]]
-- [[Примитивы синхронизации: lock, Monitor]] · [[Semaphore, Mutex, ReaderWriterLockSlim]]
+- [[Примитивы синхронизации: lock, Monitor]]
 - [[Background services и IHostedService]] — корректная фоновая работа
 - [[Диагностика в проде: дампы и dotnet-tools]] · [[Стиль кода, соглашения и .editorconfig]]

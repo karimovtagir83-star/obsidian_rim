@@ -118,7 +118,7 @@ foreach (var x in src)
 | struct/class **без** `IDisposable` (duck typing) | `finally` не генерируется вообще | нет |
 
 Три вывода, которые часто спрашивают:
-1. Переменная цикла (`x`) — **новая на каждой итерации** (важно для замыканий, см. [[Локальные функции и замыкания]]).
+1. Переменная цикла (`x`) — **новая на каждой итерации** (важно для замыканий, см. [[Делегаты, события и лямбды]]).
 2. `Current` читается один раз за итерацию. Если ваш `Current` считает что-то тяжёлое — это будет один вызов, но кэшировать его никто не станет.
 3. `Dispose()` вызывается **всегда**: и при нормальном завершении, и при `break`, и при `return` из середины цикла, и при исключении.
 
@@ -185,7 +185,7 @@ Console.WriteLine(sum);
 >     }
 > }
 > ```
-> В .NET 9+ в BCL этим приёмом добавлен `GetEnumerator` для `Range`, так что `foreach (var i in ..10)` работает. См. [[Расширяющие методы и extension members]] и [[Индексаторы, Index и Range]].
+> В .NET 9+ в BCL этим приёмом добавлен `GetEnumerator` для `Range`, так что `foreach (var i in ..10)` работает. См. [[Расширяющие методы и extension members]] и [[Синтаксис и структура программы]].
 
 ## Иерархия интерфейсов
 
@@ -234,7 +234,7 @@ foreach (int x in list)     // компилятор вставляет unbox: (i
     sum += x;
 ```
 
-Каждый `Current` здесь — это `object`, то есть `int` уже упакован в куче. Три элемента — три аллокации. Именно поэтому негенерик-коллекции (`ArrayList`, `Hashtable`) не используют в новом коде. См. [[Boxing и unboxing]].
+Каждый `Current` здесь — это `object`, то есть `int` уже упакован в куче. Три элемента — три аллокации. Именно поэтому негенерик-коллекции (`ArrayList`, `Hashtable`) не используют в новом коде. См. [[Value types vs Reference types]].
 
 ### Асинхронный вариант
 
@@ -562,7 +562,7 @@ public static IEnumerable<T> TakeEvery<T>(this IEnumerable<T> source, int step)
 ((IEnumerable<int>)null!).TakeEvery(2);   // ArgumentNullException сразу, на этой строке
 ```
 
-Локальная функция здесь удобнее приватного метода: не засоряет тип и видна только там, где нужна. Именно так устроен весь LINQ в BCL (`Enumerable.Where` → `WhereIterator`). Подробнее в [[Свои операторы LINQ]] и [[Защитное программирование и guard clauses]].
+Локальная функция здесь удобнее приватного метода: не засоряет тип и видна только там, где нужна. Именно так устроен весь LINQ в BCL (`Enumerable.Where` → `WhereIterator`). Подробнее в [[Свои операторы LINQ]] и [[Когда исключение — плохой выбор]].
 
 ## Struct-энумераторы и аллокации
 
@@ -593,7 +593,7 @@ IEnumerator<T> IEnumerable<T>.GetEnumerator() => GetEnumerator();   // здес�
 IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();         // только при работе через интерфейс
 ```
 
-Явная реализация интерфейсов (см. [[Явная реализация интерфейсов]]) убирает интерфейсные версии из публичного API типа, и перегрузка `foreach` всегда выбирает структуру.
+Явная реализация интерфейсов (см. [[Интерфейсы]]) убирает интерфейсные версии из публичного API типа, и перегрузка `foreach` всегда выбирает структуру.
 
 > [!warning] `List<T>.Enumerator` нельзя копировать
 > Это **мутабельная структура**: её поля `_index`, `_current`, `_version` меняются в `MoveNext()`. Копирование по значению даёт независимый курсор:
@@ -825,5 +825,5 @@ public static string? FindFirstError(string path)
 - [[IEnumerable vs IQueryable]]
 - [[IAsyncEnumerable и асинхронные потоки]]
 - [[Span, ReadOnlySpan и Memory]]
-- [[Boxing и unboxing]]
+- [[Value types vs Reference types]]
 - [[IDisposable, using и паттерн Dispose]]

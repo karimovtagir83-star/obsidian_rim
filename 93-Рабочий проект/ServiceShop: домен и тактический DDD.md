@@ -225,7 +225,7 @@ PaymentMethodDoesntAllowOrderCancelBrokenRule
 Есть и `IBusinessRuleWithCode` — вариант с кодом ошибки, чтобы фронт мог локализовать сообщение (в `Startup.cs` код прогоняется через `ILocalizer<PurchaseResource>`).
 
 > [!info] Почему `IsBrokenAsync` асинхронный, если многие правила синхронные
-> В синхронных правилах видно `Task.FromResult(...)` — выглядит как шум. Но часть правил обращается к внешним проверкам: `AuthorizedBuyerPurchaseLimitRule` дёргает `ICheckOfferPurchaseLimitForBuyer`, а `ModeratedOfferQuantityMustNotBeMoreThenInWarehouseRule` — `IModeratedOfferQuantityInWarehouseChecker`. Интерфейсы объявлены в домене, реализованы в инфраструктуре — это [[Инверсия зависимостей на практике]] в чистом виде: домену нужна информация, и он объявляет, в какой форме её ждёт, не зная про БД.
+> В синхронных правилах видно `Task.FromResult(...)` — выглядит как шум. Но часть правил обращается к внешним проверкам: `AuthorizedBuyerPurchaseLimitRule` дёргает `ICheckOfferPurchaseLimitForBuyer`, а `ModeratedOfferQuantityMustNotBeMoreThenInWarehouseRule` — `IModeratedOfferQuantityInWarehouseChecker`. Интерфейсы объявлены в домене, реализованы в инфраструктуре — это [[SOLID]] в чистом виде: домену нужна информация, и он объявляет, в какой форме её ждёт, не зная про БД.
 > Сделать интерфейс синхронным нельзя (запрос в БД), делить на два интерфейса — усложнение. Общий асинхронный контракт — меньшее из зол.
 
 ---
@@ -317,7 +317,7 @@ public class OrderStatus : Enumeration
 
 Преимущества перед `enum`: у значения есть и число (для БД), и строковый ключ (для API и логов), к нему можно прицепить поведение и нельзя случайно скастовать произвольный `int`.
 
-Про сами перечисления — [[Перечисления (enum)]].
+Про сами перечисления — [[Записи (record) и структуры]].
 
 Числа не по порядку: 100+ — статусы, добавленные позже, когда 8–99 уже были заняты в проде. Это нормальная археология живой системы: id в базе поменять нельзя.
 
@@ -350,7 +350,7 @@ Domain/Aggregates/Cart/Interfaces/ICartRepository.cs      ← контракт (
 Infrastructure/Repositories/MongoCartRepository.cs         ← реализация (как это сделано)
 ```
 
-Это [[Инверсия зависимостей на практике]]: домен объявляет потребность, инфраструктура её удовлетворяет, стрелка зависимости смотрит внутрь.
+Это [[SOLID]]: домен объявляет потребность, инфраструктура её удовлетворяет, стрелка зависимости смотрит внутрь.
 
 Интерфейсы репозиториев в проекте «толстые» — у `ICartRepository` 14 методов: `GetByBuyerAsync`, `GetAllByStoreId`, `Get14DaysOldCarts`, `BulkUpdateCartsAsync` и так далее. Это отход от канонического DDD, где репозиторий — коллекция агрегатов с минимумом методов, а сложные выборки уходят в спецификации ([[Specification pattern]]). Причина прозаична: методы добавлялись под конкретные задачи. Про сам вопрос «нужен ли репозиторий поверх ORM» — [[Repository и Unit of Work: нужны ли поверх EF Core]].
 
@@ -381,7 +381,7 @@ Orders.Domain/Order/
 
 ### Strategy под способы оплаты
 
-Пять способов оплаты (Nasiya BNPL, BML, AlifMobi Native, AlifMobi Acquiring, наличные) породили бы гигантский `switch` в методе создания заказа. Вместо этого — [[Паттерны GoF: поведенческие]], паттерн «Стратегия»:
+Пять способов оплаты (Nasiya BNPL, BML, AlifMobi Native, AlifMobi Acquiring, наличные) породили бы гигантский `switch` в методе создания заказа. Вместо этого — [[Паттерны GoF: что реально встречается]], паттерн «Стратегия»:
 
 ```csharp
 containerBuilder.RegisterType<AlifNasiyaOrderCreationStrategy>().As<IOrderCreationStrategy>();
@@ -546,7 +546,7 @@ public async Task CancelAsync(int? cancelReason)
 - [[ServiceShop: Outbox, Inbox и обмен событиями]]
 - [[DDD: тактические паттерны]]
 - [[Доменные события]]
-- [[Инверсия зависимостей на практике]]
+- [[SOLID]]
 - [[Иммутабельность как приём проектирования]]
 - [[Specification pattern]]
 - [[SOLID]]

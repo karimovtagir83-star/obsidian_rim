@@ -52,7 +52,7 @@ Minimal API / MVC           ← как вы описываете эндпоин�
 - [[Options pattern и конфигурация сервисов]] — `IOptions`/`IOptionsSnapshot`/`IOptionsMonitor`, валидация, `AddXxx`
 - [[Keyed services и продвинутая регистрация]] — keyed services (.NET 8+), фабрики, открытые дженерики
 
-Теория за этим — в [[Инверсия зависимостей на практике]] и [[SOLID]].
+Теория за этим — в [[SOLID]] и [[SOLID]].
 
 ## 3. Описание эндпоинтов
 

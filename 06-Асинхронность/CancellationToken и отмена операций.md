@@ -131,7 +131,7 @@ catch (OperationCanceledException) when (ct.IsCancellationRequested)
 2. **Не «глотать».** Тихий `catch (OperationCanceledException) { }` превращает прерванную работу в успешную — вызывающий решит, что всё выполнено.
 3. **Различать отмену и таймаут.** Если токен отменил ты сам по истечении времени, наружу правильнее отдать `TimeoutException`: для вызывающего это разные ситуации.
 
-`TaskCanceledException` — наследник `OperationCanceledException`, поэтому ловить достаточно базовый тип ([[Иерархия исключений в .NET]]).
+`TaskCanceledException` — наследник `OperationCanceledException`, поэтому ловить достаточно базовый тип ([[Обработка исключений]]).
 
 ---
 
@@ -345,6 +345,6 @@ public class CleanupService : BackgroundService
 - [[async и await: как это работает на самом деле]] · [[Task и Task Parallel Library]]
 - [[Исключения в асинхронном коде]] — `OperationCanceledException` среди прочих
 - [[Background services и IHostedService]] — `stoppingToken` и корректная остановка
-- [[Дедлоки, async void и типичные ошибки]] · [[System.Threading.Channels]]
+- [[Дедлоки, async void и типичные ошибки]] · [[Parallel, PLINQ и параллелизм данных]]
 - [[Устойчивость: retry, circuit breaker, Polly]] — таймауты и повторы вокруг внешних вызовов
 - [[Командная строка Linux для .NET-разработчика]] — `SIGTERM` и grace-период

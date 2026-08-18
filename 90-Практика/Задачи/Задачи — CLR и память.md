@@ -315,9 +315,9 @@ for (int i = 0; i < 10_000; i++)
 ## Связанное
 
 - [[04 — Типы, память, CLR (обзор раздела)]] — теория ко всем разделам этого задачника
-- [[Стек и куча: что где лежит]] · [[Boxing и unboxing]] · [[Value types vs Reference types]]
-- [[Сборка мусора (GC): как работает]] · [[Поколения GC, LOH и режимы сборщика]]
+- [[Value types vs Reference types]]
+- [[Сборка мусора (GC): как работает]]
 - [[IDisposable, using и паттерн Dispose]] · [[Слабые ссылки и утечки памяти в .NET]]
-- [[Span, ReadOnlySpan и Memory]] · [[stackalloc и работа без аллокаций]]
-- [[Дженерики в CLR: как устроены]] · [[JIT, Tiered Compilation, ReadyToRun, Native AOT]]
+- [[Span, ReadOnlySpan и Memory]] · [[Span, ReadOnlySpan и Memory]]
+- [[Дженерики: ограничения и вариантность]] · [[JIT, Tiered Compilation, ReadyToRun, Native AOT]]
 - [[Как измерять: BenchmarkDotNet]] · [[Диагностика в проде: дампы и dotnet-tools]]
