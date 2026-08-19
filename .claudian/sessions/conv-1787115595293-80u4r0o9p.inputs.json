@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787115595293-80u4r0o9p",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787115595454-ui1uf47",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787115595284-3breu3v",
+      "timestamp": 1787115595284,
+      "rawDisplayText": "что такое неймспейс и зачем он нужен",
+      "canonicalText": "что такое неймспейс и зачем он нужен",
+      "context": {
+        "currentNote": {
+          "path": "02-Язык C#/Синтаксис и структура программы.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "cc3856eee7abf3b8ed8419982f10cc415d6c385c03dca9afffaa1788c7943d0c",
+      "providerUserMessageId": "58a8c9e2-a0c6-4967-99de-e402c5b3ae4d",
+      "providerAssistantMessageId": "d76d1f01-07d6-488c-8961-a52cbc6dbae5"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787115807606-q96mpfo",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787115807598-1mwdv63",
+      "timestamp": 1787115807598,
+      "rawDisplayText": "я из дарта почему там такого нет",
+      "canonicalText": "я из дарта почему там такого нет",
+      "images": [],
+      "contentDigest": "45feae8fe860d89449d4dbf91118e211aad38056291005e848b965af7a965785",
+      "providerUserMessageId": "d57fb2e7-c04b-41bb-bb50-349cdcfd24e4",
+      "providerAssistantMessageId": "e150dfd4-cff7-4ae7-9c78-d907ab6f6275"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787116652823-x145zvl",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1787116652818-tbjq37u",
+      "timestamp": 1787116652818,
+      "rawDisplayText": "не понял что такое модификаторы (помни что я из дарт)",
+      "canonicalText": "не понял что такое модификаторы (помни что я из дарт)",
+      "images": [],
+      "contentDigest": "850dc401c7595ce608c76605e3c540d8298150ca808d67b2e00acf45e08de298",
+      "providerUserMessageId": "69a55969-3fb8-421c-aba6-52ea22d037ff",
+      "providerAssistantMessageId": "a50ddae7-a34b-43cb-900d-42ad6ed4543f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787116843053-qlq7wky",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1787116843048-8alll05",
+      "timestamp": 1787116843048,
+      "rawDisplayText": "да",
+      "canonicalText": "да",
+      "images": [],
+      "contentDigest": "49edcfb4766f02a46300afeb5431833d3600a6c0129b6d9cc3ef30ff2907e5f4",
+      "providerUserMessageId": "c727d43b-0f61-46f0-96e0-b74571601740",
+      "providerAssistantMessageId": "ed64b4f4-8105-46b6-a99f-624d00d2bb9c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787117028852-jd6imc3",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1787117028843-wtshyc9",
+      "timestamp": 1787117028843,
+      "rawDisplayText": "что такое using",
+      "canonicalText": "что такое using",
+      "images": [],
+      "contentDigest": "5109f19e3abd3b95ca4e936b601d7118c1f33ef8889756ad2a6c18920b64e67d",
+      "providerUserMessageId": "70ac27b4-dea8-4abd-a81b-bb8318f2cea2",
+      "providerAssistantMessageId": "75ddbcd8-7f55-4750-8fcc-52c977a8eb46"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787119317060-lie4231",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1787119317054-kcgr0qd",
+      "timestamp": 1787119317054,
+      "rawDisplayText": "Дженерики не понимаю что это",
+      "canonicalText": "Дженерики не понимаю что это",
+      "context": {
+        "editorSelection": {
+          "notePath": "02-Язык C#/Nullable reference types.md",
+          "mode": "selection",
+          "selectedText": "Дженерики",
+          "lineCount": 1,
+          "startLine": 214
+        }
+      },
+      "images": [],
+      "contentDigest": "51078d152879591927d66262ec505dbad339bb0df650f1a526f5108da88c0136",
+      "providerUserMessageId": "4617b114-49ab-41e9-ba5c-464bed16176e",
+      "providerAssistantMessageId": "556a3a40-5d28-4861-9ff4-7bce21711a08"
+    }
+  ]
+}

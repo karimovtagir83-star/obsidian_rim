@@ -1,0 +1,23 @@
+{
+  "id": "conv-1787115595293-80u4r0o9p",
+  "providerId": "claude",
+  "title": "Explain namespaces in programming",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787115595322,
+  "lastActivityAt": 1787119347718,
+  "sessionId": "1df9282d-9818-4951-adfd-0e372e728de4",
+  "selectedModel": "sonnet",
+  "providerState": {
+    "providerSessionId": "1df9282d-9818-4951-adfd-0e372e728de4"
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1039,
+    "cacheReadInputTokens": 47423,
+    "contextWindow": 967000,
+    "contextTokens": 48464,
+    "percentage": 5,
+    "contextWindowIsAuthoritative": true
+  }
+}
