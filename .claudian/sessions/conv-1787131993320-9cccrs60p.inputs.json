@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787131993320-9cccrs60p",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787131993357-8xeoork",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787131993313-3y7ptw8",
+      "timestamp": 1787131993313,
+      "rawDisplayText": "как сейчас лучше всего мне прокинуть эту базу в айклауд на айфоне",
+      "canonicalText": "как сейчас лучше всего мне прокинуть эту базу в айклауд на айфоне",
+      "images": [],
+      "contentDigest": "e4382ddd083a7557f39b5e5200ec5767cc3bad77996582206c293f27ef3d5133",
+      "providerUserMessageId": "10fc4df6-1b0f-4dac-9c25-17e2859665f9",
+      "providerAssistantMessageId": "6454d936-5680-4db0-96d3-d6acf6a7bf66"
+    }
+  ]
+}

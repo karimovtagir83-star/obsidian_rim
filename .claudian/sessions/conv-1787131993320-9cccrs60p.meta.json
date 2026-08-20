@@ -1,0 +1,25 @@
+{
+  "id": "conv-1787131993320-9cccrs60p",
+  "providerId": "claude",
+  "title": "Sync database to iCloud on iPhone",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787131993328,
+  "lastActivityAt": 1787132054333,
+  "sessionId": null,
+  "selectedModel": "sonnet",
+  "providerState": {
+    "previousProviderSessionIds": [
+      "65ef8979-3863-4f2d-8445-5ae5d2935b6c"
+    ]
+  },
+  "usage": {
+    "model": "sonnet",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 954,
+    "cacheReadInputTokens": 31916,
+    "contextWindow": 967000,
+    "contextTokens": 32872,
+    "percentage": 3,
+    "contextWindowIsAuthoritative": true
+  }
+}

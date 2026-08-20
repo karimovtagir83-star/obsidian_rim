@@ -1,9 +1,9 @@
 {
   "userName": "",
-  "permissionMode": "yolo",
-  "model": "sonnet",
+  "permissionMode": "normal",
+  "model": "opus",
   "thinkingBudget": "off",
-  "effortLevel": "medium",
+  "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
   "titleGenerationLocale": "",
@@ -98,18 +98,18 @@
   "settingsProvider": "claude",
   "lastSelectedChatModel": {
     "providerId": "claude",
-    "model": "sonnet"
+    "model": "opus"
   },
   "savedProviderModel": {
-    "claude": "sonnet"
+    "claude": "opus"
   },
   "savedProviderEffort": {
-    "claude": "medium"
+    "claude": "high"
   },
   "savedProviderServiceTier": {},
   "savedProviderThinkingBudget": {},
   "savedProviderPermissionMode": {
-    "claude": "yolo"
+    "claude": "normal"
   },
   "pendingProviderSessionInvalidations": {},
   "lastCustomModel": "",

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787139421658-n12594dt7",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787139421805-b2z1xcm",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787139421652-6eens5c",
+      "timestamp": 1787139421652,
+      "rawDisplayText": "почему не заполнено",
+      "canonicalText": "почему не заполнено",
+      "context": {
+        "currentNote": {
+          "path": "09-ASP.NET Core/09 — ASP.NET Core (обзор раздела).md"
+        }
+      },
+      "images": [],
+      "contentDigest": "f279b0dc39c71982f3fff488f99204ba425addc20dc69b6ea00bf84d38c7c674",
+      "providerUserMessageId": "83ad94e0-54cc-4c7d-a471-547593e91ef5",
+      "providerAssistantMessageId": "cdab58d6-cb44-43de-9834-ea5984cc4538"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787139459723-lj83gl4",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787139459719-nm5vur9",
+      "timestamp": 1787139459719,
+      "rawDisplayText": "все в этом разделе",
+      "canonicalText": "все в этом разделе",
+      "images": [],
+      "contentDigest": "77e1c8a25c1ff47971b3010491ea5e3bbc7649007265f24160d8a40d9ff1468b",
+      "providerUserMessageId": "9922d134-949f-466c-adef-7685d3bcd233",
+      "providerAssistantMessageId": "7b29e9b2-1dd1-411c-ade3-9f849ebdf048"
+    }
+  ]
+}

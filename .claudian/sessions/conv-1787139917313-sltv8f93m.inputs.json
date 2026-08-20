@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787139917313-sltv8f93m",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787139917345-ryowcz9",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787139917310-pvjqytz",
+      "timestamp": 1787139917310,
+      "rawDisplayText": "создай claude md",
+      "canonicalText": "создай claude md",
+      "images": [],
+      "contentDigest": "86ef9cc12f3a7d3f3923a0d7e76107fa2ca8dc13c776814d8a16d7a6637f8ab9",
+      "providerUserMessageId": "4b859b93-2ee4-4698-9401-f1a24e132b02",
+      "providerAssistantMessageId": "0571e01f-4b38-417d-833b-7bf99a6e4e3e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787140087585-ovgn849",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787140087582-ma982pb",
+      "timestamp": 1787140087582,
+      "rawDisplayText": "ты учел в мд что заметки нужно создавать с учетом агентной разработки без нудных деталей больше про понимание",
+      "canonicalText": "ты учел в мд что заметки нужно создавать с учетом агентной разработки без нудных деталей больше про понимание",
+      "images": [],
+      "contentDigest": "2bafb8d4bea1a0ded9a87517ed22f3ceb7f7a750bf14cef01ff27bc71676963f",
+      "providerUserMessageId": "4102ebed-43cb-4146-b9c7-b3d72e506a69",
+      "providerAssistantMessageId": "53d4982e-0e1b-49e5-87c5-4cae0eb6f8b7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787140382033-pxhhlop",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1787140382031-vwfn6tz",
+      "timestamp": 1787140382031,
+      "rawDisplayText": "те новые заметки в разделе дот нет сверь с этими правилами",
+      "canonicalText": "те новые заметки в разделе дот нет сверь с этими правилами",
+      "images": [],
+      "contentDigest": "07b7f9eea669757c6f685a4e5e4129cde59fd99a187f8b5da460d48336a4a623",
+      "providerUserMessageId": "55de6417-f2ef-41f2-8bf2-ff5c68c29f15",
+      "providerAssistantMessageId": "df98ab8e-3830-468f-a438-7c6b539166a6"
+    }
+  ]
+}
