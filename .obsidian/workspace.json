@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9f8e0dbf5bfed3fa",
+            "id": "5ec9df2929d66185",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -207,10 +207,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9f8e0dbf5bfed3fa",
+  "active": "5ec9df2929d66185",
   "lastOpenFiles": [
-    "02-Язык C#/Стиль кода, соглашения и .editorconfig.md",
+    "93-Рабочий проект/ServiceShop: гайд для новичка одним файлом.md",
+    "93-Рабочий проект/ServiceShop: локальный запуск и отладка.md",
     "01-Роадмап/Трекер прогресса.md",
+    "04-Типы, память, CLR/Сборка мусора (GC): как работает.md",
+    "04-Типы, память, CLR/Value types vs Reference types.md",
+    "04-Типы, память, CLR/NuGet: пакеты, версии, транзитивные зависимости.md",
+    "04-Типы, память, CLR/Файл проекта .csproj изнутри.md",
+    "04-Типы, память, CLR/Устройство .NET: CLR, BCL, SDK, рантаймы.md",
+    "02-Язык C#/Стиль кода, соглашения и .editorconfig.md",
     "02-Язык C#/Отладка: точки останова, watch, immediate.md",
     "02-Язык C#/Когда исключение — плохой выбор.md",
     "02-Язык C#/Обработка исключений.md",
@@ -228,13 +235,6 @@
     "09-ASP.NET Core/Minimal API.md",
     "09-ASP.NET Core/Dependency Injection: контейнер ASP.NET Core.md",
     "09-ASP.NET Core/Жизненные циклы сервисов: Singleton, Scoped, Transient.md",
-    "09-ASP.NET Core/Middleware и конвейер обработки запроса.md",
-    "01-Роадмап/🗺️ Роадмап (полный).md",
-    "02-Язык C#/Nullable reference types.md",
-    "02-Язык C#/Синтаксис и структура программы.md",
-    "93-Рабочий проект/93 — Рабочий проект: Alif ServiceShop (обзор раздела).md",
-    "16-Агентная разработка/Границы доверия: что не отдавать агенту.md",
-    "16-Агентная разработка/Типовые ошибки агентов в .NET-коде.md",
     "16-Агентная разработка",
     "_СОСТОЯНИЕ БАЗЫ.md.tmp.76317.15d001f6faed",
     "90-Практика/Задачи",

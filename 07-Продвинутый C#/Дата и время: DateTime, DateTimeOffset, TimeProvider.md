@@ -28,17 +28,20 @@ aliases: [DateTime vs DateTimeOffset, TimeProvider, Дата и время в .N
 var utc = DateTime.UtcNow;              // Kind = Utc
 var local = DateTime.Now;                // Kind = Local, тот же физический момент +N часов
 
-Console.WriteLine(utc < local);          // true, хотя это один и тот же момент времени
+Console.WriteLine(utc < local);          // true на сервере с положительным смещением (Ташкент = UTC+5),
+                                         // хотя это один и тот же момент времени
 // Сравнение DateTime игнорирует Kind при вычитании/сравнении —
 // оба значения трактуются как "число тиков", без учёта смещения
 ```
 
 ```csharp
-// DateTimeOffset сравнивается по абсолютному моменту, а не по "сырому" значению
-var utcOffset = DateTimeOffset.UtcNow;
-var localOffset = DateTimeOffset.Now;
+// DateTimeOffset сравнивается по абсолютному моменту, а не по "сырому" значению.
+// Берём ОДИН момент и смотрим на него из двух поясов — иначе сравниваем два разных чтения часов
+var moment = DateTimeOffset.UtcNow;
+var sameInTashkent = moment.ToOffset(TimeSpan.FromHours(5));
 
-Console.WriteLine(utcOffset == localOffset);   // true — один и тот же момент
+Console.WriteLine(moment == sameInTashkent);                    // true — момент один
+Console.WriteLine(moment.DateTime == sameInTashkent.DateTime);  // false — "сырые" значения разошлись на 5 часов
 ```
 
 ### TimeProvider — абстракция времени для тестов (.NET 8+)
@@ -52,8 +55,10 @@ public sealed class OrderExpirationChecker(TimeProvider timeProvider)
         order.CreatedAt.AddHours(24) < timeProvider.GetUtcNow();
 }
 
-// В тесте — управляемое время без Thread.Sleep и без реального ожидания:
-var fakeTime = new FakeTimeProvider(startTime: DateTimeOffset.Parse("2026-01-01T00:00:00Z"));
+// В тесте — управляемое время без Thread.Sleep и без реального ожидания.
+// FakeTimeProvider идёт не с рантаймом, а пакетом Microsoft.Extensions.TimeProvider.Testing
+// (namespace Microsoft.Extensions.Time.Testing) — без него пример не соберётся
+var fakeTime = new FakeTimeProvider(DateTimeOffset.Parse("2026-01-01T00:00:00Z"));
 var checker = new OrderExpirationChecker(fakeTime);
 fakeTime.Advance(TimeSpan.FromHours(25));
 Assert.True(checker.IsExpired(order));
@@ -63,7 +68,8 @@ Assert.True(checker.IsExpired(order));
 
 | Ситуация | Что использовать |
 |---|---|
-| Хранение момента времени в БД, передача между сервисами | `DateTimeOffset` — однозначен независимо от часового пояса читателя |
+| Передача момента между сервисами | `DateTimeOffset` — однозначен независимо от часового пояса читателя |
+| Хранение момента времени в MySQL | **Типа со смещением в MySQL нет.** Pomelo кладёт `DateTimeOffset` в `datetime(6)`, переводя в UTC, и при чтении вернёт то же значение со смещением 0 — исходный офсет не восстанавливается. Практический вывод: хранить UTC и не притворяться, что смещение сохранилось; если пояс события — часть бизнес-смысла, он едет отдельной колонкой |
 | Локальное время для отображения пользователю | `DateTimeOffset` + явное преобразование в нужный часовой пояс на этапе отображения, не раньше |
 | Бизнес-логика, зависящая от "текущего момента" | внедрять `TimeProvider`, не вызывать `DateTime.Now`/`UtcNow` напрямую внутри метода |
 | Продолжительность (сколько прошло, таймаут) | `TimeSpan` |
